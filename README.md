@@ -2,11 +2,9 @@
 
 ## Author - 642115024 Thaipat Sukhumpraisan
 
-## Advanced Programming Lab Submission #2
+## Advanced Programming Lab Submission #7
 
 ### Exercise Solution
-1. [Initialize.java Line 14](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/controller/Initialize.java), [AllEventHandlers.java Line 95](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/controller/AllEventHandlers.java)
-2. [CurrencyPane.java Line 53-107](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/view/CurrencyPane.java)
-3. [AllEventHandlers.java Line 65-80](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/controller/AllEventHandlers.java), [CurrencyPane.java Line 31-34](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/view/CurrencyPane.java)
-4. [FetchData.java Line 24](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/controller/FetchData.java)
-5. [FetchData.java Line 48-59](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/controller/FetchData.java), [AllEventHandlers.java Line 90](https://github.com/BlessedPretzel/CaseStudy2/blob/main/src/main/java/se233/chapter2/controller/AllEventHandlers.java)
+- [Logger added to the add button](https://github.com/BlessedPretzel/CaseStudy2/blob/CaseStudy2-Build-Exercise/src/main/java/se233/chapter2/controller/AllEventHandlers.java#L105)
+- [Logger added to the delete button](https://github.com/BlessedPretzel/CaseStudy2/blob/CaseStudy2-Build-Exercise/src/main/java/se233/chapter2/controller/AllEventHandlers.java#L37)
+- [Packaged .jar](https://github.com/BlessedPretzel/CaseStudy2/blob/CaseStudy2-Build-Exercise/target/CaseStudy2-1.0-SNAPSHOT.jar)
