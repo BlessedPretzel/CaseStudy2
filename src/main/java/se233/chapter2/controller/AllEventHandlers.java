@@ -1,16 +1,17 @@
 package se233.chapter2.controller;
 
 import javafx.scene.control.TextInputDialog;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import se233.chapter2.Launcher;
 import se233.chapter2.model.Currency;
 import se233.chapter2.model.CurrencyEntity;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Optional;
-import java.util.concurrent.ExecutionException;
 
 public class AllEventHandlers {
+    static Logger logger = LoggerFactory.getLogger(AllEventHandlers.class);
     public static void onRefresh() {
         try {
             Launcher.refreshPane();
@@ -33,6 +34,7 @@ public class AllEventHandlers {
             Launcher.setCurrencyList(currencyList);
             Launcher.refreshPane();
         }
+        logger.info("Deleted [Currency code:{}] ", code);
     }
     public static void onWatch(String code) {
         ArrayList<Currency> currencyList = Launcher.getCurrencyList();
@@ -100,5 +102,6 @@ public class AllEventHandlers {
             Launcher.setCurrencyList(currencyList);
             Launcher.refreshPane();
         }
+        logger.info("Added [Currency code:{}] ", code);
     }
 }

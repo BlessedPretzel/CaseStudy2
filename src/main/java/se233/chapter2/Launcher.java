@@ -20,6 +20,10 @@ public class Launcher extends Application {
     private static TopPane topPane;
     private static CurrencyParentPane currencyParentPane;
     private static ArrayList<Currency> currencyList;
+
+    public static void main(String[] args) {
+        launch(args);
+    }
     @Override
     public void start(Stage primaryStage) throws ExecutionException, InterruptedException {
         this.primaryStage = primaryStage;

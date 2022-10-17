@@ -27,6 +27,7 @@ public class CurrencyPane extends BorderPane {
             AllEventHandlers.onWatch(currency.getShortCode());
         });
 
+        //Exercise 3
         this.unwatch = new Button("Unwatch");
         this.unwatch.setOnAction(actionEvent -> {
             AllEventHandlers.onUnwatch(currency.getShortCode());

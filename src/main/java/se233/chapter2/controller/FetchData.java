@@ -20,11 +20,13 @@ public class FetchData {
 
         ArrayList<CurrencyEntity> histList = new ArrayList<>();
 
+        //Exercise 4
+        src = src.toLowerCase();
         for (int i=N; i>0; i--) {
             String retrievedJson = null;
             try {
                 String dateI = LocalDate.now().minusDays(i).format(formatter);
-                String url_str = String.format("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/%s/currencies/thb/%s.json", dateI, src.toLowerCase());
+                String url_str = String.format("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/%s/currencies/thb/%s.json", dateI, src);
                 retrievedJson = IOUtils.toString(new URL(url_str), Charset.defaultCharset());
             } catch (MalformedURLException e) {
                 System.out.println("Encountered a Malformed URL exception");
@@ -34,9 +36,7 @@ public class FetchData {
             }
             JSONObject jsonObj2 = new JSONObject(retrievedJson);
             String date = jsonObj2.getString("date");
-
-            //Exercise 4
-            double rate = jsonObj2.getDouble(src.toLowerCase());
+            double rate = jsonObj2.getDouble(src);
 
             histList.add(new CurrencyEntity(rate, date));
         }
